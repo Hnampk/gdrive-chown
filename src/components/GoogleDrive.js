@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Table, Button, message, Modal, Input, Space } from "antd";
 import { FolderOutlined, FileOutlined, ReloadOutlined } from "@ant-design/icons";
 
-const CLIENT_ID = "5850929203-mveobbkvcmbmai06q9pmffrhjjslcbto.apps.googleusercontent.com";
-const API_KEY = "AIzaSyC_T8LWftW5mbrSgwt-DOJeJPRekjPjjgA";
+const CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+const API_KEY = process.env.REACT_APP_GOOGLE_API_KEY;
 const DISCOVERY_DOC = "https://www.googleapis.com/discovery/v1/apis/drive/v3/rest";
 const SCOPES = "https://www.googleapis.com/auth/drive.metadata.readonly https://www.googleapis.com/auth/drive";
 const OWNER_EMAIL = process.env.REACT_APP_OWNER_EMAIL;
